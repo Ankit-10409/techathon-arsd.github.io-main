@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap');
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/cc.otf");
+}
+
+@font-face {
+  font-family: "Samarkan";
+  src: url("../fonts/samarkan.ttf");
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  color: white !important;
+}
+
+* {
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  z-index: 1000;
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent !important;
+}
+
+.nav-link {
+  margin-left: 1em;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.logo {
+  width: 10em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#event-title {
+  display: none;
+  font-family: 'Eczar', serif;
+  font-size: larger;
+}
+
+#event-title-eng {
+  font-family: 'Samarkan', serif;
+  font-size: larger;
+}
+
+#event-edition {
+  font-family: "Cascadia Code";
+  font-size: 3.5rem;
+}
+
+.discord-btn {
+  background-color: #fff !important;
+  border: #fff !important;
+  border-radius: 2rem;
+  color: #000 !important;
+}
+
+#home {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("https://cdn.discordapp.com/attachments/947145696681803816/947220925789663282/741407.jpg"); */
+  height: 100%;
+  margin: auto 0;
+  padding-top: 3em;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.social {
+  margin: 0 0.5rem;
+}
+
+.social i {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center !important;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh !important;
+}
+
+#faq > div {
+  width: 75vw;
+}
+
+@media (min-width: 768px) {
+  #faq > div {
+    width: 50%;
+  }
+}
+
+#event-cont {
+  width: 70vw;
+}
+
+#contact-cont {
+  width: 40vw;
+}
+
+.modal-footer {
+  justify-content: center !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  text-align: justify !important;
+}
+
+@media (max-width: 1100px) {
+  #event-cont,
+  #contact-cont,
+  #partner-cont {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    text-align: center;
+    background-color: #222 !important;
+    margin-left: 0;
+    padding: 0.75em !important;
+  }
+  #home {
+    padding-top: 0;
+  }
+  .lead {
+    font-size: 1rem !important;
+  }
+  #about,
+  #events,
+  #prizes,
+  #partners,
+  #faq {
+    min-height: 4vh !important;
+  }
+}
+
+#devf-icon {
+  filter: invert(1) brightness(1);
+  height: 1em;
+}
+
+/* Events */
+.scrolling-wrapper {
+  overflow-x: auto;
+  min-width: 300px;
+  max-width: 850px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.4em;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  opacity: 0.65;
+}
+
+.card-block {
+  width: calc(15em);
+  height: calc(15em);
+  margin-bottom: 2em;
+  background-color: #fff;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-block:hover {
+  transform: translateY(-5px);
+}
+
+.event.card-block:hover,
+.prize.card-block:hover {
+  box-shadow: none;
+  background-color: #444;
+  color: white !important;
+  opacity: 0.9;
+}
+
+#particles-js {
+  z-index: 0;
+  opacity: 70%;
+  background-color: unset !important;
+}
+
+.img-event-logo {
+}
